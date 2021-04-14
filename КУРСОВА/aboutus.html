@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/all.css">
+    <title>За нас</title>
+    <!-- Language Switcher -->
+    <link rel="stylesheet" href="css/languageSwitcher.css">
+    <!-- Google Maps-->
+    <link rel="stylesheet" href="css/GoogleMap.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg px-4">
+    <a class="navbar-brand" href="#"><img src="img/Pette.png" width="100" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav">
+        <span class="toggler-icon"><i class="fas fa-bars"></i></span>
+    </button>
+    <div class="collapse navbar-collapse" id="myNav">
+        <ul class="navbar-nav mx-auto text-capitalize">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Начало</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="#">За нас</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="order.html">Поръчка</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="careers.html">Кариери</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="login.html">Вход</a>
+            </li>
+        </ul>
+        <div class="nav-info-items d-none d-lg-flex ">
+            <!-- single info -->
+            <div class="nav-info align-items-center d-flex justify-content-between mx-lg-5">
+                <span class="info-icon mx-lg-3"><i class="fas fa-phone"></i></span>
+                <p class="mb-0">+ 052 456 789</p>
+            </div>
+            <!-- end of single info -->
+            <!-- LSwitch     // NOT RESPONDING          -->
+            <!--
+            <div class="Language">
+
+            <div class="lang-menu">
+                <div class="selected-lang">
+                    English
+                </div>
+                <div class="langWrap">
+                    <ul>
+                        <li>
+                            <a href="#" class="bg" language='bulgarian'>Български</a>
+                        </li>
+                        <li>
+                            <a href="#" class="en" language='english'>English</a>
+                        </li>
+                        <li>
+                            <a href="#" class="de" language='german'>German</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+            -->
+            <!-- single info -->
+            <div id="cart-info" class="nav-info align-items-center cart-info d-flex justify-content-between mx-lg-5">
+                <span class="cart-info__icon mr-lg-3"><i class="fas fa-shopping-cart"></i></span>
+                <p class="mb-0 text-capitalize"><span id="item-count">0</span> артикул(а) - <span class="item-total">0.00</span> лв</p>
+            </div>
+            <!-- end of single info -->
+        </div>
+    </div>
+</nav>
+<!-- end of nav -->
+<!-- banner  -->
+<div class="container-fluid">
+    <div class="row max-height justify-content-center align-items-center">
+    <div id="cart" class="cart">
+        <!-- cart total -->
+        <div class="cart-total-container d-flex justify-content-around text-capitalize mt-5">
+            <h5>Общо</h5>
+            <h5> <strong id="cart-total" class="font-weight-bold">0 </strong> лв</h5>
+        </div>
+        <!--end cart total -->
+        <!-- cart buttons -->
+        <div class="cart-buttons-container mt-3 d-flex justify-content-between">
+            <a href="#" id="clear-cart" class="btn btn-outline-secondary btn-black text-uppercase">Изчисти</a>
+            <a href="#" class="btn btn-outline-secondary text-uppercase btn-pink">Плати</a>
+        </div>
+    </div>
+</div>
+<!-- about us -->
+<section class="about py-5" id="about">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-10 mx-auto col-md-6 my-5">
+                <h1 class="text-capitalize">За <strong class="banner-title ">нас</strong></h1>
+                <p class="my-4 text-muted w-75" class="description">Бързо-развиващ се супер маркет, който Ви предлага огромно разнообразие от
+                продукти, подбрани с добро качество. </p>
+                <a href="#" class="btn btn-outline-secondary btn-black text-uppercase ">Още</a>
+
+            </div>
+            <div class="col-10 mx-auto col-md-6 align-self-center my-5">
+                <div class="about-img__container">
+                    <img src="img/cart.png" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+    <div id="map"></div>
+
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBB7-tR4NcOsXYajAcNE3Fov072y8wb_3I&callback=initMap">
+    </script>
+    </body>
+    </html>
+<p class="copy"> &copy Copyright 2021</p>
+<script src="js/GoogleMaps.js"></script>
+
+<script src="languageSwitcher.js"></script>
+</body>
+</html>

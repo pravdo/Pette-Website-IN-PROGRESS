@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- main css -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="css/all.css">
+  <!-- Calendar links> -->
+ <link rel="stylesheet" href="css/calendar.css">
+  <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+  />
+  <link
+          href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet"
+  />
+
+  <title>Начало</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg px-4">
+  <a class="navbar-brand" href="#"><img src="img/Pette.png" width="100" alt=""></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav">
+    <span class="toggler-icon"><i class="fas fa-bars"></i></span>
+  </button>
+  <div class="collapse navbar-collapse" id="myNav">
+    <ul class="navbar-nav mx-auto text-capitalize">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Начало</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="aboutus.html">За нас</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="order.html">Поръчка</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="careers.html">Кариери</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="login.html">Вход</a>
+      </li>
+    </ul>
+    <div class="nav-info-items d-none d-lg-flex ">
+      <!-- single info -->
+      <div class="nav-info align-items-center d-flex justify-content-between mx-lg-5">
+        <span class="info-icon mx-lg-3"><i class="fas fa-phone"></i></span>
+        <p class="mb-0">+ 052 456 789</p>
+      </div>
+      <!-- end of single info -->
+      <!-- single info -->
+      <div id="cart-info" class="nav-info align-items-center cart-info d-flex justify-content-between mx-lg-5">
+        <span class="cart-info__icon mr-lg-3"><i class="fas fa-shopping-cart"></i></span>
+        <p class="mb-0 text-capitalize"><span id="item-count">0</span> артикул(а) - <span class="item-total">0.00</span> лв</p>
+      </div>
+      <!-- end of single info -->
+    </div>
+  </div>
+</nav>
+<!-- end of nav -->
+<!-- banner  -->
+<div class="container-fluid">
+<div class="row max-height justify-content-center align-items-center">
+  <div class="col-10 mx-auto banner text-center">
+    <h1 class="text">Добре дошли в<strong class="banner-title ">Pette</strong></h1>
+
+  </div>
+  <div id="cart" class="cart">
+    <!-- cart total -->
+    <div class="cart-total-container d-flex justify-content-around text-capitalize mt-5">
+      <h5>Общо</h5>
+      <h5> <strong id="cart-total" class="font-weight-bold">0 </strong> лв</h5>
+    </div>
+    <!--end cart total -->
+    <!-- cart buttons -->
+    <div class="cart-buttons-container mt-3 d-flex justify-content-between">
+      <a href="#" id="clear-cart" class="btn btn-outline-secondary btn-black text-uppercase">Изчисти</a>
+      <a href="#" class="btn btn-outline-secondary text-uppercase btn-pink">Плати</a>
+    </div>
+    <!--end of  cart buttons -->
+
+  </div>
+</div>
+</div>
+<div class="text1">
+<h1>Следете за нашите най - нови предложения</h1>
+</div>
+<div class="rowCalendar">
+  <div class="columnCalendar">
+<div class="promote">
+  <img src="img/brochure.jpg" class="promote" width="70%">
+</div>
+  </div>
+  <div class="columnCalendar">
+<div class="containerCalendar">
+  <div class="calendar">
+    <div class="month">
+      <i class="fas fa-angle-left prev"></i>
+      <div class="date">
+        <h1></h1>
+        <p></p>
+      </div>
+      <i class="fas fa-angle-right next"></i>
+    </div>
+    <div class="weekdays">
+      <div>Sun</div>
+      <div>Mon</div>
+      <div>Tue</div>
+      <div>Wed</div>
+      <div>Thu</div>
+      <div>Fri</div>
+      <div>Sat</div>
+    </div>
+    <div class="days"></div>
+  </div>
+</div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- modal-container -->
+<div class="container-fluid ">
+  <div class="row lightbox-container align-items-center">
+    <div class="col-10 col-md-10 mx-auto text-right lightbox-holder">
+      <span class="lightbox-close"><i class="fas fa-window-close"></i></span>
+      <div class="lightbox-item"></div>
+      <span class="lightbox-control btnLeft"><i class="fas fa-caret-left"></i></span>
+      <span class="lightbox-control btnRight"><i class="fas fa-caret-right"></i></span>
+    </div>
+
+  </div>
+</div>
+<p class="copy"> &copy Copyright 2021</p>
+<script src="js/calendar.js"></script>
+</body>
+</html>
